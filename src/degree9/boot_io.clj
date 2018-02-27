@@ -22,7 +22,7 @@
   (FileUtils/copyDirectory source target))
 
 (defn- to-dir [source target]
-  (FileUtils/copyToDirectory source target))
+  (FileUtils/copyFileToDirectory source target))
 
 (defn- mk-dir [dir]
   (FileUtils/forceMkdir dir))

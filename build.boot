@@ -8,10 +8,10 @@
 (require '[degree9.boot-semver :refer :all])
 
 (task-options!
-  pom    {:project 'degree9/boot-io
+  pom    {:project 'mkarp/degree9-boot-io
           :description "Boot-clj IO functionality using Apache Commons IO."
-          :url         "https://github.com/degree9/boot-io"
-          :scm         {:url "https://github.com/degree9/boot-io"}}
+          :url         "https://github.com/mkarp/degree9-boot-io"
+          :scm         {:url "https://github.com/mkarp/degree9-boot-io"}}
   target {:dir #{"target"}})
 
 (deftask develop
