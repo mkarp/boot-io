@@ -3,7 +3,10 @@
                    [boot/core                           "2.7.2"]
                    [commons-io                          "2.6"]
                    [degree9/boot-semver                 "1.7.0" :scope "test"]]
-  :resource-paths   #{"src"})
+  :resource-paths   #{"src"}
+  :repositories #(conj % ["clojars" {:url "https://clojars.org/repo/"
+                                     :username (System/getenv "CLOJARS_USER")
+                                     :password (System/getenv "CLOJARS_PASS")}]))
 
 (require '[degree9.boot-semver :refer :all])
 
